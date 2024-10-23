@@ -25,7 +25,7 @@ env:
 jobs:
   check_commits:
     name: Check Commits
-    runs-on: xxxxxxxx
+    runs-on: [self-hosted, macOS, x64]
     outputs:
       latest_commit_sha: ${{ steps.get_sha.outputs.latest_commit_sha }}
     steps:
