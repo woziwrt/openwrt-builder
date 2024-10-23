@@ -44,7 +44,7 @@ jobs:
   build:
     name: Build BPI-R4 with Mediatek Feed
     needs: [check_commits]
-    runs-on: ubuntu-24.04
+    runs-on: [self-hosted, macOS,x64]
     steps:
       - name: Install dependencies
         run: |
